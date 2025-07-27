@@ -1,0 +1,112 @@
+/* Page Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  margin: 0;
+  padding: 50px 0;
+}
+
+/* Outer Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner Form Box */
+.form-box {
+  width: 420px;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animation for Form Box */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title Gradient */
+.form-title {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  
+  border-radius: 30px;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: #ffffffee;
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #ff6a00;
+  outline: none;
+  box-shadow: 0 0 10px #ff6a00;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Button Effect */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 106, 0, 0.5);
+}
+
+/* Message Styling */
+.message-card {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  background: #ffffffcc;
+  border-left: 5px solid #ff6a00;
+  border-radius: 8px;
+  animation: slideUp 0.5s ease;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
